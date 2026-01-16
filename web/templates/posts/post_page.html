@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% load static %}
+
+{% block title %}{{ post.title }}{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/posts.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="post-container">
+    <h1 class="post-title">{{ post.title }}</h1>
+    <p class="post-meta">Slug: {{ post.slug }} • Created: {{ post.created }}</p>
+    <p class="post-body">{{ post.body }}</p>
+</div>
+ <img  class="image" src="{{ post.banner.url }}" alt="{{ post.title }}" >
+{% endblock %}

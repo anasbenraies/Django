@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% load static %}
+
+{% block title %}Posts List{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/posts.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="posts-container">
+
+    <h1 class="page-title">📄 Posts List</h1>
+
+    <ul class="posts-list">
+        {% for post in posts %}
+        <li class="post-card">
+                <a href="{% url 'posts:page' slug=post.slug %}">
+                    <h2 class="post-title">{{ post.title }}</h2>
+                </a>
+
+            <p class="post-meta">Slug: {{ post.slug }} • Created: {{ post.created }}</p>
+            <p class="post-body">{{ post.body }}</p>
+        </li>
+        {% endfor %}
+    </ul>
+
+</div>
+{% endblock %}

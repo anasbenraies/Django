@@ -1,0 +1,83 @@
+.posts-container {
+    max-width: 750px;
+    margin: 40px auto;
+    padding: 20px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* Page title */
+.page-title {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #44B78B;
+}
+
+/* Posts list */
+.posts-list {
+    list-style: none;
+    padding: 0;
+}
+
+/* Card style */
+.post-card {
+    background: #1e1e1e;
+    padding: 15px 18px;
+    margin-bottom: 18px;
+    border-radius: 12px;
+    border: 1px solid #333;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.post-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+}
+
+/* Card title */
+.post-title {
+    margin-bottom: 8px;
+    font-size: 1.3rem;
+    color: #81dbb8;
+    font-weight: 600;
+}
+
+/* Meta info */
+.post-meta {
+    font-size: 0.85rem;
+    opacity: 0.7;
+    margin-bottom: 8px;
+}
+
+/* Body text */
+.post-body {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #ccc;
+}
+
+/* Optional: small responsive tweak */
+@media (max-width: 600px) {
+    .posts-container {
+        padding: 15px;
+    }
+    .post-card {
+        padding: 12px;
+    }
+    .page-title {
+        font-size: 1.5rem;
+    }
+    .post-title {
+        font-size: 1.1rem;
+    }
+}
+.image {
+    display: block !important;
+    margin: 15px auto !important;       /* centrer horizontalement */
+    max-width: 100% !important;         /* jamais dépasser le conteneur */
+    width: 250px !important;            /* taille fixe adaptée */
+    height: auto !important;            /* conserve les proportions */
+    border-radius: 8px !important;      /* coins arrondis */
+    object-fit: contain !important;     /* image complète visible */
+}

@@ -1,0 +1,52 @@
+/* Reset global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body et layout global */
+body {
+    min-height: 100vh;
+    background-color: #121212; /* Dark modern background */
+    color: #e0e0e0;            /* Light text */
+    font-size: 1rem;           /* Taille lisible */
+    display: flex;
+    flex-flow: column;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* Navigation bar */
+nav {
+    padding: 1rem 2rem;
+    background-color: #44B78B;
+    color: #fff;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+/* Links global */
+a {
+    text-decoration: none;
+    color: #81dbb8;
+    transition: opacity 0.2s ease;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+/* Headings & paragraphs */
+h1, h2, p {
+    text-align: center;
+    color: #f0f0f0;
+}
+
+/* Main content wrapper */
+main {
+    flex-grow: 1;
+    padding: 2rem;
+}
